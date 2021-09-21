@@ -44,7 +44,7 @@ apt install -y mariadb-server mariadb-client
 echo
 echo "Creating Database and user"
 echo
-cat create_database.sql | mysql -u root -o
+mysql -u root < create_database.sql
 echo
 echo "Downloading jdbc-extension"
 echo
