@@ -34,7 +34,8 @@ wget http://us.mirrors.quenda.co/apache/guacamole/1.1.0/binary/guacamole-1.1.0.w
  mkdir /etc/guacamole
  cp guacamole-1.1.0.war /etc/guacamole/guacamole.war
  ln -s /etc/guacamole/guacamole.war /var/lib/tomcat9/webapps/
- mkdir /etc/guacamole/{extensions,lib}
+ mkdir /etc/guacamole/extensions
+ mkdir /etc/guacamole/lib
  echo "GUACAMOLE_HOME=/etc/guacamole" | tee -a /etc/default/tomcat9
 
 echo
