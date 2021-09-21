@@ -90,9 +90,9 @@ echo
 echo "Installing Apache2"
 echo
 apt install apache2 -y
-a2enmod rewrite
-a2enmod proxy_http
-a2enmod proxy_wstunnel
+/usr/sbin/a2enmod rewrite
+/usr/sbin/a2enmod proxy_http
+/usr/sbin/a2enmod proxy_wstunnel
 echo
 echo "Configuring Apache2"
 echo
