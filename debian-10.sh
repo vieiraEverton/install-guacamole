@@ -13,9 +13,9 @@ apt install -y build-essential libcairo2-dev libjpeg62-turbo-dev libtool-bin lib
 echo
 echo "Downloading and installing Guacamole Server"
 echo
-wget https://mirror.dkd.de/apache/guacamole/1.1.0/source/guacamole-server-1.1.0.tar.gz
-tar vfx guacamole-server-1.1.0.tar.gz
-cd guacamole-server-1.1.0/
+# wget https://mirror.dkd.de/apache/guacamole/1.1.0/source/guacamole-server-1.1.0.tar.gz
+tar vfx guacamole-server.tar.gz
+cd guacamole-server/
 autoreconf -fi
 ./configure --with-init-dir=/etc/init.d
 make
@@ -30,9 +30,10 @@ systemctl start guacd
 echo
 echo "Installing Guacamole Client"
 echo
-wget http://us.mirrors.quenda.co/apache/guacamole/1.1.0/binary/guacamole-1.1.0.war
+# wget http://us.mirrors.quenda.co/apache/guacamole/1.1.0/binary/guacamole-1.1.0.war
  mkdir /etc/guacamole
  cp guacamole-1.1.0.war /etc/guacamole/guacamole.war
+ cp guacamole.war /etc/guacamole/guacamole.war
  ln -s /etc/guacamole/guacamole.war /var/lib/tomcat9/webapps/
  mkdir /etc/guacamole/extensions
  mkdir /etc/guacamole/lib
