@@ -11,6 +11,13 @@ echo "Installing required packages"
 echo
 apt install -y build-essential libcairo2-dev libjpeg62-turbo-dev libtool-bin libossp-uuid-dev libavcodec-dev libavutil-dev libswscale-dev freerdp2-dev libpango1.0-dev libssh2-1-dev libtelnet-dev libwebsockets-dev libpulse-dev libssl-dev libvorbis-dev libwebp-dev
 echo
+echo "Install cmake"
+echo
+apt update
+apt install snapd
+snap install core
+snap install cmake --classic
+echo
 echo "Installing lib vnc client"
 echo
 tar vfx libvncserver.tar.gz
