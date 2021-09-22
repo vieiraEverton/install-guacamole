@@ -25,8 +25,8 @@ mkdir build
 cd build
 cmake ..
 cmake --build .
-make
-make install
+# make
+# make install
 cd ..
 cd ..
 echo
