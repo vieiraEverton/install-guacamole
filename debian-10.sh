@@ -13,9 +13,7 @@ apt install -y build-essential libcairo2-dev libjpeg62-turbo-dev libtool-bin lib
 echo
 echo "Install cmake"
 echo
-apt install snapd -y
-snap install core
-snap install cmake --classic
+apt install cmake -y
 echo
 echo "Installing lib vnc client"
 echo
