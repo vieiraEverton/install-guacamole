@@ -2,7 +2,6 @@
 
 echo "Updating package cache"
 apt-get update
-apt-get -u dist-upgrade
 echo
 echo "Installing Tomcat 9"
 echo
@@ -18,6 +17,7 @@ apt install cmake -y
 echo
 echo "Installing lib vnc client"
 echo
+apt-get -u dist-upgrade
 tar vfx libvncserver.tar.gz
 cd libvncserver/
 mkdir build
