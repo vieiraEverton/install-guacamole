@@ -9,7 +9,7 @@ apt install -y tomcat9 tomcat9-admin tomcat9-common tomcat9-user
 echo
 echo "Installing required packages"
 echo
-apt install -y build-essential libcairo2-dev libjpeg62-turbo-dev libtool-bin libossp-uuid-dev libavcodec-dev libavutil-dev libswscale-dev freerdp2-dev libpango1.0-dev libssh2-1-dev libtelnet-dev libwebsockets-dev libpulse-dev libssl-dev libvorbis-dev libwebp-dev libsystemd-dev libvncserver-dev
+apt install -y build-essential libcairo2-dev libjpeg62-turbo-dev libtool-bin libossp-uuid-dev libavcodec-dev libavutil-dev libswscale-dev freerdp2-dev libpango1.0-dev libssh2-1-dev libtelnet-dev libwebsockets-dev libpulse-dev libssl-dev libvorbis-dev libwebp-dev libsystemd-dev libvncserver-dev libsdl2-dev libgtk2.0-dev
 echo
 echo "Install cmake"
 echo
