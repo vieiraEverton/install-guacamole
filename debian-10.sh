@@ -13,8 +13,7 @@ apt install -y build-essential libcairo2-dev libjpeg62-turbo-dev libtool-bin lib
 echo
 echo "Install cmake"
 echo
-apt update
-apt install snapd
+apt install snapd -y
 snap install core
 snap install cmake --classic
 echo
