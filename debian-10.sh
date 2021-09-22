@@ -1,8 +1,8 @@
 #!/bin/sh
 
 echo "Updating package cache"
-apt-get update
-apt-get upgrade
+apt-get update -y
+apt-get upgrade -y
 echo
 echo "Installing Tomcat 9"
 echo
