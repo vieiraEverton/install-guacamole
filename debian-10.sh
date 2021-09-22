@@ -9,11 +9,18 @@ apt install -y tomcat9 tomcat9-admin tomcat9-common tomcat9-user
 echo
 echo "Installing required packages"
 echo
-apt install -y build-essential libcairo2-dev libjpeg62-turbo-dev libtool-bin libossp-uuid-dev libavcodec-dev libavutil-dev libswscale-dev freerdp2-dev libpango1.0-dev libssh2-1-dev libtelnet-dev libwebsockets-dev libpulse-dev libssl-dev libvorbis-dev libwebp-dev libvncserver-dev
+apt install -y build-essential libcairo2-dev libjpeg62-turbo-dev libtool-bin libossp-uuid-dev libavcodec-dev libavutil-dev libswscale-dev freerdp2-dev libpango1.0-dev libssh2-1-dev libtelnet-dev libwebsockets-dev libpulse-dev libssl-dev libvorbis-dev libwebp-dev libsystemd-dev libvncserver-dev
 echo
 echo "Install cmake"
 echo
-apt install cmake -y
+wget https://github-releases.githubusercontent.com/537699/dc0c831c-fcae-4f07-a437-0e77143de2ae?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20210922%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20210922T142915Z&X-Amz-Expires=300&X-Amz-Signature=9706a1f8b0b8eb3a3bb992624b4a62d1f7d8c517f7e6bd6605db92110cbce8b3&X-Amz-SignedHeaders=host&actor_id=1022634&key_id=0&repo_id=537699&response-content-disposition=attachment%3B%20filename%3Dcmake-3.21.3.tar.gz&response-content-type=application%2Foctet-stream
+tar vfx cmake-3.21.3.tar.gz
+cd cmake-3.21.3/
+./bootstrap
+make
+make install
+cd
+# apt install cmake -y
 echo
 echo "Installing lib vnc client"
 echo
