@@ -2,6 +2,7 @@
 
 echo "Updating package cache"
 apt-get update
+apt-get upgrade
 echo
 echo "Installing Tomcat 9"
 echo
